@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnaire</title>
+</head>
+<body>
+    <h1>Questionnaire</h1>
+    <form method="POST" action="/predict">
+        <label>Student Age:</label>
+        <select name="age">
+            <option value="1">18-21</option>
+            <option value="2">22-25</option>
+            <option value="3">above 26</option>
+        </select>
+        <br>
+        <label>Sex:</label>
+        <select name="sex">
+            <option value="1">female</option>
+            <option value="2">male</option>
+        </select>
+        <br>
+        <label>Graduated high-school type:</label>
+        <select name="graduated_h_school_type">
+            <option value="1">private</option>
+            <option value="2">state</option>
+            <option value="3">other</option>
+        </select>
+        <br>
+        <label>Scholarship type:</label>
+        <select name="scholarship_type">
+            <option value="1">None</option>
+            <option value="2">25%</option>
+            <option value="3">50%</option>
+            <option value="4">75%</option>
+            <option value="5">Full</option>
+        </select>
+        <br>
+        <label>Additional work:</label>
+        <select name="additional_work">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+        <br>
+        <label>Regular artistic or sports activity:</label>
+        <select name="activity">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+        <br>
+        <label>Do you have a partner:</label>
+        <select name="partner">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+        <br>
+        <label>Total salary if available:</label>
+        <select name="total_salary">
+            <option value="1">USD 135-200</option>
+            <option value="2">USD 201-270</option>
+            <option value="3">USD 271-340</option>
+            <option value="4">USD 341-410</option>
+            <option value="5">above 410</option>
+        </select>
+        <br>
+        <label>Transportation to the university:</label>
+        <select name="transport">
+            <option value="1">Bus</option>
+            <option value="2">Private car/taxi</option>
+            <option value="3">Bicycle</option>
+            <option value="4">Other</option>
+        </select>
+        <br>
+        <label>Accommodation type in Cyprus:</label>
+        <select name="accomodation">
+            <option value="1">rental</option>
+            <option value="2">dormitory</option>
+            <option value="3">with family</option>
+            <option value="4">Other</option>
+        </select>
+        <br>
+        <label>Mother's education:</label>
+        <select name="mother_ed">
+            <option value="1">primary school</option>
+            <option value="2">secondary school</option>
+            <option value="3">high school</option>
+            <option value="4">university</option>
+            <option value="5">MSc.</option>
+            <option value="6">Ph.D.</option>
+        </select>
+        <br>
+        <label>Father's education:</label>
+        <select name="farther_ed">
+            <option value="1">primary school</option>
+            <option value="2">secondary school</option>
+            <option value="3">high school</option>
+            <option value="4">university</option>
+            <option value="5">MSc.</option>
+            <option value="6">Ph.D.</option>
+        </select>
+        <br>
+        <label>Number of sisters/brothers (if available):</label>
+        <select name="siblings">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 or above</option>
+        </select>
+        <br>
+        <label>Parental status:</label>
+        <select name="parental_status">
+            <option value="1">married</option>
+            <option value="2">divorced</option>
+            <option value="3">died - one of them or both</option>
+        </select>
+        <br>
+        <label>Mother's occupation:</label>
+        <select name="mother_occup">
+            <option value="1">retired</option>
+            <option value="2">housewife</option>
+            <option value="3">government officer</option>
+            <option value="4">private sector employee</option>
+            <option value="5">self-employment</option>
+            <option value="6">other</option>
+        </select>
+        <br>
+        <label>Father's occupation:</label>
+        <select name="father_occup">
+            <option value="1">retired</option>
+            <option value="2">government officer</option>
+            <option value="3">private sector employee</option>
+            <option value="4">self-employment</option>
+            <option value="5">other</option>
+        </select>
+        <br>
+        <label>Weekly study hours:</label>
+        <select name="weekly_study_hours">
+            <option value="1">None</option>
+            <option value="2">&lt;5 hours</option>
+            <option value="3">6-10 hours</option>
+            <option value="4">11-20 hours</option>
+            <option value="5">more than 20 hours</option>
+        </select>
+        <br>
+        <label>Reading frequency (non-scientific books/journals):</label>
+        <select name="reading_non_scientific">
+            <option value="1">None</option>
+            <option value="2">Sometimes</option>
+            <option value="3">Often</option>
+        </select>
+        <br>
+        <label>Reading frequency (scientific books/journals):</label>
+        <select name="reading_scientific">
+            <option value="1">None</option>
+            <option value="2">Sometimes</option>
+            <option value="3">Often</option>
+        </select>
+        <br>
+        <label>Attendance to the seminars/conferences related to the department:</label>
+        <select name="attendance_seminars_dep">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+        <br>
+        <label>Impact of your projects/activities on your success:</label>
+        <select name="impact_of_projects">
+            <option value="1">positive</option>
+            <option value="2">negative</option>
+            <option value="3">neutral</option>
+        </select>
+        <br>
+        <label>Attendance to classes:</label>
+        <select name="attendances_classes">
+            <option value="1">always</option>
+            <option value="2">sometimes</option>
+            <option value="3">never</option>
+        </select>
+        <br>
+        <label>Preparation to midterm exams 1:</label>
+        <select name="preparation_midterm_company">
+            <option value="1">alone</option>
+            <option value="2">with friends</option>
+            <option value="3">not applicable</option>
+        </select>
+        <br>
+        <label>Preparation to midterm exams 2:</label>
+        <select name="preparation_midterm_time">
+            <option value="1">closest date to the exam</option>
+            <option value="2">regularly during the semester</option>
+            <option value="3">never</option>
+        </select>
+        <br>
+        <label>Taking notes in classes:</label>
+        <select name="taking_notes">
+            <option value="1">never</option>
+            <option value="2">sometimes</option>
+            <option value="3">always</option>
+        </select>
+        <br>
+        <label>Listening in classes:</label>
+        <select name="listenning">
+            <option value="1">never</option>
+            <option value="2">sometimes</option>
+            <option value="3">always</option>
+        </select>
+        <br>
+        <label>Discussion improves my interest and success in the course:</label>
+        <select name="discussion_improves_interest">
+            <option value="1">never</option>
+            <option value="2">sometimes</option>
+            <option value="3">always</option>
+        </select>
+        <br>
+        <label>Flip-classroom:</label>
+        <select name="flip_classrom">
+            <option value="1">not useful</option>
+            <option value="2">useful</option>
+            <option value="3">not applicable</option>
+        </select>
+        <br>
+        <label>Cumulative grade point average in the last semester (/4.00):</label>
+        <select name="grade_previous">
+            <option value="1">&lt;2.00</option>
+            <option value="2">2.00-2.49</option>
+            <option value="3">2.50-2.99</option>
+            <option value="4">3.00-3.49</option>
+            <option value="5">above 3.49</option>
+        </select>
+        <br>
+        <label>Expected Cumulative grade point average in the graduation (/4.00):</label>
+        <select name="grade_expected">
+            <option value="1">&lt;2.00</option>
+            <option value="2">2.00-2.49</option>
+            <option value="3">2.50-2.99</option>
+            <option value="4">3.00-3.49</option>
+            <option value="5">above 3.49</option>
+        </select>
+        <br>
+        <label>Course ID:</label>
+        <select name="course_id">
+            <option value="1">Course 1</option>
+            <option value="2">Course 2</option>
+            <option value="3">Course 3</option>
+            <option value="4">Course 4</option>
+            <option value="5">Course 5</option>
+            <option value="6">Course 6</option>            
+            <option value="7">Course 7</option>
+            <option value="8">Course 8</option>
+            <option value="8">Course 9</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
